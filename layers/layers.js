@@ -37,21 +37,27 @@ jsonSource_Participants_2.addFeatures(features_Participants_2);var lyr_Participa
                 source:jsonSource_Participants_2, 
                 style: style_Participants_2,
     title: 'Participants<br />\
-    <img src="styles/legend/Participants_2_0.png" />  1,0000 - 3,2000 <br />\
-    <img src="styles/legend/Participants_2_1.png" />  3,2000 - 5,4000 <br />\
-    <img src="styles/legend/Participants_2_2.png" />  5,4000 - 7,6000 <br />\
-    <img src="styles/legend/Participants_2_3.png" />  7,6000 - 9,8000 <br />\
-    <img src="styles/legend/Participants_2_4.png" />  9,8000 - 12,0000 <br />'
+    <img src="styles/legend/Participants_2_0.png" />  1 - 4 <br />\
+    <img src="styles/legend/Participants_2_1.png" />  4 - 8 <br />\
+    <img src="styles/legend/Participants_2_2.png" />  8 - 11 <br />\
+    <img src="styles/legend/Participants_2_3.png" />  11 - 14 <br />\
+    <img src="styles/legend/Participants_2_4.png" />  14 - 18 <br />\
+    <img src="styles/legend/Participants_2_5.png" />  18 - 21 <br />\
+    <img src="styles/legend/Participants_2_6.png" />  21 - 25 <br />\
+    <img src="styles/legend/Participants_2_7.png" />  25 - 28 <br />\
+    <img src="styles/legend/Participants_2_8.png" />  28 - 31 <br />\
+    <img src="styles/legend/Participants_2_9.png" />  31 - 35 <br />\
+    <img src="styles/legend/Participants_2_10.png" />  35 - 38 <br />'
         });
 
 lyr_MapboxStreetsv10_0.setVisible(true);lyr_BAV_en_France_1.setVisible(true);lyr_Participants_2.setVisible(true);
 var layersList = [lyr_MapboxStreetsv10_0,lyr_BAV_en_France_1,lyr_Participants_2];
 lyr_BAV_en_France_1.set('fieldAliases', {'cartodb_id': 'cartodb_id', 'category': 'category', 'value': 'value', });
-lyr_Participants_2.set('fieldAliases', {'cartodb_id': 'cartodb_id', 'category': 'category', 'value': 'value', });
+lyr_Participants_2.set('fieldAliases', {'category': 'category', 'value': 'value', });
 lyr_BAV_en_France_1.set('fieldImages', {'cartodb_id': '', 'category': '', 'value': '', });
-lyr_Participants_2.set('fieldImages', {'cartodb_id': '', 'category': '', 'value': '', });
+lyr_Participants_2.set('fieldImages', {'category': '', 'value': '', });
 lyr_BAV_en_France_1.set('fieldLabels', {'cartodb_id': 'no label', 'category': 'no label', 'value': 'no label', });
-lyr_Participants_2.set('fieldLabels', {'cartodb_id': 'no label', 'category': 'no label', 'value': 'no label', });
+lyr_Participants_2.set('fieldLabels', {'category': 'no label', 'value': 'no label', });
 lyr_Participants_2.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
